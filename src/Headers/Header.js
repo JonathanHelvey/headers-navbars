@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import useDocumentScrollThrottled from './useScroll';
+import useDocumentScrollThrottled from '../Hooks/useScroll';
 
 function Header() {
   const [shouldHideHeader, setShouldHideHeader] = useState(false);

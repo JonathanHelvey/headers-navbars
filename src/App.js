@@ -2,13 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Header from './Header';
+import Header2 from '../src/Headers/Header2';
 import Body from './Body';
 
 function App() {
   return (
     <div className="wrapper">
-      <Header />
+      <Header2 />
       <Body />
     </div>
   );
