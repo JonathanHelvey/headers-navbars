@@ -6,13 +6,11 @@ function Header2() {
 const [header, setHeader] = useState("header")
 
 const listenScrollEvent = (event) => {
-  if (window.scrollY < 200) {
+  if (window.scrollY < 73) {
     return setHeader("header")
-  } else if (window.scrollY > 190 && window.scrollY < 500) {
+  } else if (window.scrollY > 70) {
     return setHeader("header2")
-  } else {
-    return setHeader('header3')
-  }
+  } 
 }
 
 useEffect(() => {
