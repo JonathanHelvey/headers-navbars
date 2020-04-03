@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from 'react'
 
+import "./Header.css"
+
 function Header2() {
-const [color, setColor] = useState("header")
+const [header, setHeader] = useState("header")
 
 const listenScrollEvent = (event) => {
   if (window.scrollY < 200) {
-    return setColor("header")
+    return setHeader("header")
+  } else if (window.scrollY > 190 && window.scrollY < 500) {
+    return setHeader("header2")
   } else {
-    return setColor("header2")
+    return setHeader('header3')
   }
 }
 
@@ -19,7 +23,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <header className={color}>
+    <header className={header}>
       <div className="logo">Logo</div>
       <ul className="links">
         <li className="link-item">home</li>
